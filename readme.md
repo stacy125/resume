@@ -7,12 +7,12 @@ For this exercise we're going to create our own npm package that will print out 
 
 2. In order to publish anything to npm, we have to **sign up/login with npm**.  
     * You can type `npm whoami` to see if npm recognizes you as logged in. (Most likely you are not) 
-    * To sign up, you can type `npm login` and choose a name and pass word. You can also do this through their site [npmjs](https://www.npmjs.com/). 
+    * To sign up, you can type `npm login` and choose a name and password. You can also do this through their site [npmjs](https://www.npmjs.com/). 
     * Lastly you will also need to verify your email account.
 
 3. Once you've signed up, type in `npm init` to create a `package.json` file. The only two required fields are `name` and `version`
     * The package name should be something like `yourname-resume` (You have to pick a name that hasn't been taken - you can search npm's site to see what's available)
-    * Version should follow this format `x.x.x` (I recommend putting `0.1.0`)
+    * Version should follow this format `x.x.x` (I recommend putting `1.0.0`)
     * For `test_command` and `entry_point` you can just hit enter. 
     * For `license`, you can use `ISC`
     * Fill in the rest fields the best you can. It's ok if you don't know what to put. You can just hit enter, and you can always edit everything later. 
@@ -51,10 +51,10 @@ fs.readFile(__dirname + '/info.json', 'utf8', function(err, data) {
     * a callback function 
         * if there is an error getting the file, print the error, else, print out and return the content.  
 
-7. Now we're going to add in a script a user who's downloaded your npm file can run to display your resume. 
+7. Next add the following to your package.json file. We're adding in a command that someone who's downloaded your npm file can run to display your resume. 
 ```json
 "bin": {
-    "whatever-name-you-want!": "./index.js"
+    "your-command-here": "./index.js"
   },
 ```
 
@@ -62,7 +62,7 @@ fs.readFile(__dirname + '/info.json', 'utf8', function(err, data) {
 
 8. In `info.json` create a json object that's a short resume for yourself. 
 > Note: json wants property names and strings to be wrapped in "double quotes"! There are a few other differences as well that separate it from a javascript object
-You can use my resume object as a guide. Yours can be shorter, or sillier, whatever you want!
+You can use my resume as a guide. Yours can be shorter, or sillier, whatever you want! Feel free to add in more properties like interests, soft-skills, pets, etc...
 ```json
 {
     "name": "Perry Fustero",
@@ -90,7 +90,7 @@ You can use my resume object as a guide. Yours can be shorter, or sillier, whate
 }
 ```
 
-9. Update your readme to be a short description about what you've made
+9. Update your `readme` to be a short description about what you've made
 
 10. git init, add, and commit. 
     * Then create a new github repository
@@ -101,8 +101,8 @@ You can use my resume object as a guide. Yours can be shorter, or sillier, whate
     * You should be able to see your site and your readme on the npmjs site under your profile.
     > To update you can just call npm publish again, but you first need to change the version number!
 
-12. To test that everything worked, change into a different directory and run `npm i -g whatever-you-called-this-in-bin`
-    * You can also download eachother's resumes and print them out!
+12. To test that everything worked, change into a different directory and run `npm i -g your-command-here`. Then run `your-command-here`
+    * You can also download eachother's npm resumes and print them out!
 
 ## 🌟BONUS!🌟
 
