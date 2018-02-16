@@ -99,10 +99,12 @@ You can use my resume object as a guide. Yours can be shorter, or sillier, whate
 
 11. Ok, finally -  run `npm publish`
     * You should be able to see your site and your readme on the npmjs site under your profile.
+    > To update you can just call npm publish again, but you first need to change the version number!
 
 12. To test that everything worked, change into a different directory and run `npm i -g whatever-you-called-this-in-bin`
     * You can also download eachother's resumes and print them out!
 
 ## 🌟BONUS!🌟
 
-Checkout [Color.js](https://github.com/Marak/colors.js) to make your resume different colors!
+* Checkout [Color.js](https://github.com/Marak/colors.js) to make your resume different colors!
+* Use [JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) to create your resume as a javascript object you can loop through customize more!
