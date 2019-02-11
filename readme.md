@@ -65,34 +65,36 @@ fs.readFile(__dirname + '/info.json', 'utf8', function(err, data) {
 You can use my resume as a guide. Yours can be shorter, or sillier, whatever you want! Feel free to add in more properties like interests, soft-skills, pets, etc...
 ```json
 {
-    "name": "Perry Fustero",
-    "website": "https://perryf.github.io/",
-    "linkedin": "https://www.linkedin.com/messaging/thread/6370015072009355264/",
-    "github": "perryf",
-    "email": "pjfust@gmail.com",
-    "resume": "https://perryf.github.io/img/resume-fustero.pdf",
-    "proficient-technologies": [
-        "html", 
-        "css", 
-        "javascript", 
-        "react", 
-        "angular", 
-        "mern", 
-        "mean",
-        "sql",
-        "node", 
-        "mongodb"
+    "name": "Hammad Malik",
+    "website": "https://tomatohammado.github.io/",
+    "linkedin": "https://www.linkedin.com/in/tomatohammado/",
+    "github": "tomatohammado",
+    "email": "hammad.malik@generalassemb.ly",
+    "resume": "https://tomatohammado.github.io/assets/Malik-Hammad-Resume.pdf",
+    "proficientTechnologies": [
+        "Javascript",
+        "React",
+        "Vue",
+        "Node",
+        "Express",
+        "Mongodb",
+        "PostgreSQL",
+        "Python",
+        "Django",
+        "Wordpress",
+        "Drupal"
     ],
-    "other-skills": [
-        "teaching",
-        "piano"
+    "otherSkills": [
+        "Unagi",
+        "Five Finger Fillet",
+        "Bridge"
     ]
 }
 ```
 
 9. Update your `readme` to be a short description about what you've made
 
-10. git init, add, and commit. 
+10. git init, add, and commit.
     * Then create a new github repository
     * Link your local file to the github repository (use `git remote`!)
     * push up your repo!
