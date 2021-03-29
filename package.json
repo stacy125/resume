@@ -1,0 +1,19 @@
+{
+  "name": "npm-resume",
+  "version": "1.0.0",
+  "description": "For this exercise we're going to create our own npm package that will print out your resume.  the cool thing about this is that anyone can install your code and print out a resume from their console!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/stacy125/npm-resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "your-command-here": "./index.js"
+  }
+}
